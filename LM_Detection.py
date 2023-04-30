@@ -38,7 +38,7 @@ def run():
     st.image(img)
     img_file = st.file_uploader("Choose your Image", type=['png', 'jpg'])
     if img_file is not None:
-        save_image_path = 'https://github.com/Naresh-2002/LandMark-Recognition/blob/2ee380b1114b5d8e8c782ea549f0ddfbde26218d/Uploaded_Images.rar' + img_file.name
+        save_image_path = 'https://github.com/Naresh-2002/LandMark-Recognition/blob/74fd1a8d3347e8d05a3ddc1e5086108ccddc3212/re' + img_file.name
         with open(save_image_path, "wb") as f:
             f.write(img_file.getbuffer())
         prediction,image = image_processing(save_image_path)
